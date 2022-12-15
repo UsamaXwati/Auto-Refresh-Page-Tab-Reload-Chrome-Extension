@@ -1,0 +1,70 @@
+<html>
+    <head>
+      <title>Auto Refresh Page & Easy Tabs Reload</title>
+      <style>
+            /* Use a font from Google Fonts */
+      @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+      /* Apply the font to the whole page */
+      body {
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      /* Center the page content */
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      /* Style the input and buttons */
+      input, button {
+        font-size: 16px;
+        padding: 8px 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin: 8px 0;
+      }
+
+      /* Style the start button */
+      #start-btn {
+        background-color: #4caf50;
+        color: #fff;
+      }
+
+      /* Style the stop button */
+      #stop-btn {
+        background-color: #f44336;
+        color: #fff;
+      }
+
+      /* Style the reset button */
+      #reset-btn {
+        background-color: #2196f3;
+        color: #fff;
+      }
+
+      /* Style the buttons when they are active */
+      button:active {
+        /* Add a slight shadow to the button */
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+        /* Move the button down and to the right slightly */
+        transform: translate(2px, 2px);
+      }
+      </style>
+    </head>
+    <body>
+      <h1>Auto Refresh Tab</h1>
+      <p>Enter the time in seconds for auto refresh:</p>
+      <input type="number" id="refresh-time" value="60" />
+      <br />
+      <button id="start-btn">Start</button>
+      <button id="stop-btn" disabled>Stop</button>
+      <button id="reset-btn">Reset</button>
+      <br />
+      <p>Time remaining until next refresh: <span id="time-remaining">60</span> seconds</p>
+      <script src="popup.js"></script>
+    </body>
+  </html>
+  
+  
