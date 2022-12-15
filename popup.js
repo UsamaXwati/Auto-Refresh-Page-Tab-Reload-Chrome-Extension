@@ -26,6 +26,8 @@ function refreshTab() {
       title: 'Tab refreshed',
       message: 'The current tab has been refreshed.'
     });
+    // Reset the time remaining to the refresh time
+    timeRemaining = refreshTimeInput.value;
   });
 }
 
